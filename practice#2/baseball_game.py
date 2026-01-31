@@ -3,8 +3,10 @@ import random
 
 def goal(x):
     a = []
-    for i in range(x):
-        a.append(random.randint(1, 9))
+    for _ in range(x):
+        b = random.randint(1, 9)
+        if b not in a:
+            a.append(b)
     return a
 
 
