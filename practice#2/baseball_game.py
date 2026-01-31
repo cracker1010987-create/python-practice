@@ -1,12 +1,14 @@
 import random
 
 
-def goal(x):
+def goal():
     a = []
-    for _ in range(x):
+    while True:
         b = random.randint(1, 9)
         if b not in a:
             a.append(b)
+        if len(a) == 3:
+            break
     return a
 
 
@@ -21,7 +23,7 @@ def check(x):
     return strike, ball
 
 
-ans = goal(3)
+ans = goal()
 
 attemps = 0
 print("=== 숫자 야구 게임을 시작합니다 ===")
