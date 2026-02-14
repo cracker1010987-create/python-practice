@@ -21,7 +21,6 @@ class Pet:
 
 
     def play(self):
-
         print(f"\n[놀기] {self.name}가 공놀이를 합니다. 와아!")
         self.boredom -= 20
         self.hunger += 10
