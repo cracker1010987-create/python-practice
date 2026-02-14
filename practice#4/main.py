@@ -4,6 +4,7 @@ class Pet:
         self.hunger = 0 
         self.boredom = 0 
 
+
     def feed(self):
         print(f"\n[밥] {self.name}가 밥을 먹습니다. 냠냠!")
         self.hunger -= 20
